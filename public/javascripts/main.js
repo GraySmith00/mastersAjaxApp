@@ -1,4 +1,4 @@
-const table = document.querySelector('#table');
+const table = document.querySelector('#leaderboardTable');
 
 function getMastersData () {
   axios.get('https://statdata.pgatour.com/r/014/leaderboard-v2mini.json')
@@ -54,13 +54,24 @@ function getMastersData () {
         `
       }
       
-      const playerTotal =
-      `
-          <div class="cell" data-title="totalScore" id="totalScore">
-          ${player.total} 
+      if (player.total === 0) {
+        var playerTotal =
+        `
+            <div class="cell" data-title="totalScore" id="totalScore">
+            E
+            </div>
           </div>
-        </div>
-      `;
+        `;  
+      } else {
+        var playerTotal =
+        `
+            <div class="cell" data-title="totalScore" id="totalScore">
+            ${player.total} 
+            </div>
+          </div>
+        `;
+      }
+      
       
 
       return playerPositionAndName + playerToday + playerThru + playerTotal;
@@ -95,4 +106,6 @@ getMastersData();
 setInterval(function(){  
   getMastersData();
 }, 60000);
+
+
 
