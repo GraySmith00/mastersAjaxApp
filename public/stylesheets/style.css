@@ -1,7 +1,23 @@
+@import url("http://fonts.googleapis.com/css?family=Lato:400,700,400italic");
+@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT|Parisienne');
+
+
 body {
   margin: 0;
   color: white;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
+}
+
+@font-face {
+  font-family: 'caslonSwash';
+  font-style: normal;
+  font-weight: normal;
+  src: local('caslonSwash'), url('./fonts/caslonSwash.otf') format('truetype');
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .nav {
@@ -12,6 +28,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+  font: 400 16px "Lato", sans-serif;
 }
 
 .nav ul {
@@ -24,6 +41,11 @@ body {
 .nav ul li {
   padding-right: 20px;
   cursor: pointer;
+}
+
+.nav ul li:hover {
+  transform: scale(1.1, 1.1);
+  transition-duration: 0.5s;
 }
 
 .nav ul img {
@@ -44,12 +66,20 @@ body {
   background-position: center bottom;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  padding-top: 40px;
 }
 
 .hero h1 {
   font-size: 3em;
   font-weight: 300;
-  margin-bottom: 20px;
+  margin: 20px 0 20px 0;
+  font-family: 'Old Standard TT', serif;
+}
+
+.hero h1 span {
+  font-family: 'Parisienne', cursive;
+  font-weight: bold;
+  font-size: 1.4em;
 }
 
 .leaderboard {
@@ -80,7 +110,7 @@ body {
   width: 100%;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
   display: table;
-
+  
 }
 
 .leaderboardTable .row {
@@ -110,7 +140,7 @@ body {
 .player-info {
   color: black;
   display: flex;
-  padding: 60px 60px 20px 60px;
+  padding: 60px 60px 60px 60px;
 }
 
 hr {
