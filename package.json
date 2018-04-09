@@ -1,0 +1,26 @@
+{
+  "name": "masters-ajax-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon ./start.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GraySmith00/mastersAjaxApp.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GraySmith00/mastersAjaxApp/issues"
+  },
+  "homepage": "https://github.com/GraySmith00/mastersAjaxApp#readme",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "ejs": "^2.5.8",
+    "express": "^4.16.3",
+    "moment": "^2.22.0"
+  }
+}
