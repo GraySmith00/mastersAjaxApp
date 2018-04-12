@@ -34,7 +34,7 @@ a {
 .nav ul {
   list-style: none;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
 }
 
@@ -48,7 +48,7 @@ a {
   transition-duration: 0.5s;
 }
 
-.nav ul img {
+.nav img {
   height: 40px;
   margin-top: -10px;
 }
@@ -141,6 +141,7 @@ a {
   color: black;
   display: flex;
   padding: 60px 60px 60px 60px;
+  
 }
 
 hr {
@@ -168,13 +169,12 @@ hr {
   -webkit-box-shadow: 10px 10px 39px -6px rgba(0,0,0,0.36);
   -moz-box-shadow: 10px 10px 39px -6px rgba(0,0,0,0.36);
   box-shadow: 10px 10px 39px -6px rgba(0,0,0,0.36);
+  width: 100%;
 }
 
 .player-info-text h2 {
   margin: 0;
 }
-
-
 
 .player-info-text h2 span {
   color: gold;
@@ -190,6 +190,8 @@ hr {
 
 .player-info-text p img {
   transform: translateY(20px);
+  height: 64px;
+  width: 64px;
 }
 
 .player-info-table {
