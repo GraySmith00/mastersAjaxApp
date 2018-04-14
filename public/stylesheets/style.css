@@ -20,6 +20,10 @@ a {
   color: inherit;
 }
 
+.display-none {
+  display: none;
+}
+
 .nav {
   background: #fff;
   color: #146545;
@@ -141,7 +145,12 @@ a {
   color: black;
   display: flex;
   padding: 60px 60px 60px 60px;
-  
+  background: rgba(0, 0, 0, 0.6);
+  margin: 0;
+}
+
+.player-bio > *:nth-of-type(even) {
+  background: rgba(0, 0, 0, 0.3);
 }
 
 hr {
@@ -221,3 +230,74 @@ hr {
 .player-info-total span {
   font-weight: 500;
 }
+
+.searchPlayer {
+  height: 300px;
+  width: 100%;
+  align-items: center;
+  background: white;
+
+  display: flex;
+  justify-content: center;
+}
+
+.flex-form {
+  flex-basis: 600px;
+  display: flex;
+  border: 20px solid rgba(0,0,0,0.3);
+  border-radius: 5px;
+
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex-form > * {
+  border-left: 0;
+  border-right: 0;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  padding: 10px;
+  background: white;
+  line-height: 50px;
+  font-size: 20px;
+  border-radius: 0;
+  outline: 0;
+  border-right:1px solid rgba(0,0,0,0.2);
+  -webkit-appearance:none;
+}
+
+input[type="search"] {
+  flex-basis: 600px;
+}
+
+.flex-form input[type="submit"] {
+  background: #FF5A5F;
+  border-top: 1px solid #FF5A5F;
+  border-bottom: 1px solid #FF5A5F;
+  color: white;
+}
+
+.flex-form > *:last-child {
+  border-right: 0;
+}
+
+#playerInfoButton {
+  font-size: 20px;
+  padding: 44px;
+  border-radius: 10px;
+  margin-left: 30px;
+  outline: none;
+  color: white;
+
+  -webkit-box-shadow: 10px 10px 39px -6px rgba(0,0,0,0.36);
+  -moz-box-shadow: 10px 10px 39px -6px rgba(0,0,0,0.36);
+  box-shadow: 10px 10px 39px -6px rgba(0,0,0,0.36);
+
+  background: #52b152; /* Old browsers */
+  background: -moz-linear-gradient(top, #52b152 -1%, #b4ddb4 0%, #52b152 0%, #83c783 0%, #008a00 0%, #002400 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #52b152 -1%,#b4ddb4 0%,#52b152 0%,#83c783 0%,#008a00 0%,#002400 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #52b152 -1%,#b4ddb4 0%,#52b152 0%,#83c783 0%,#008a00 0%,#002400 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52b152', endColorstr='#002400',GradientType=0 ); /* IE6-9 */
+
+}
+
