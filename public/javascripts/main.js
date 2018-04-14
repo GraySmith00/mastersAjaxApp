@@ -109,7 +109,7 @@ function getTopPlayers() {
                 </div>
               </div>
             </div>
-            <p class="player-info-total"><span>Total Score: </span>${player.total}</p>
+            <p class="player-info-total"><span>Total Score: </span>${player.total < 0 ? `${player.total}` : (player.total === 0 ? `E` : `+${player.total}`) }</p>
           </div> 
         </div>
       `   
@@ -187,7 +187,7 @@ function getFavoritePlayer() {
                 </div>
               </div>
             </div>
-            <p class="player-info-total"><span>Total Score: </span>${player.total}</p>
+            <p class="player-info-total"><span>Total Score: </span>${player.total < 0 ? `${player.total}` : (player.total === 0 ? `E` : `+${player.total}`) }</p>
           </div> 
         </div>
       `   
