@@ -13,15 +13,15 @@
   <nav class="nav">
       <a href="/"><img src="/images/mastersLogo.png"></a>
       <ul> 
-        <li class="link"><a href="/">Leaderboard</a></li>
-        <li class="link"><a href="https://en.wikipedia.org/wiki/Masters_Tournament#History" target="_blank">History</a></li>
-        <li class="link"><a href="http://www.masters.com/en_US/players/player_list.html" target="_blank">Players</a></li>
-        <li class="link"><a href="https://www.youtube.com/watch?v=tqDM9OiMXjY" target="_blank">Highlights</a></li>
-        <li class="link"><a href="http://www.masters.com/en_US/course/index.html" target="_blank">Golf Course</a></li>
+        <li class="link"><a href="#hero">Leaderboard</a></li>
+        <li class="link"><a href="#search-player">Players</a></li>
+        <li class="link"><a href="#about-augusta">Golf Course</a></li>
+        <li class="link"><a href="#video-highlights">Highlights</a></li>
+        <li class="link"><a href="https://en.wikipedia.org/wiki/Masters_Tournament#History" target="_blank">History Wiki</a></li>
       </ul>
   </nav>
 
-  <section class="hero">
+  <section id="hero">
     <div class="hero-inner">
 
         <h1><span>Masters</span> 2018 Leaderboard</h1>
@@ -34,12 +34,15 @@
     </div>
   </section>
 
-  <section class="searchPlayer">
-    <form class="flex-form">
-      <input type="search" placeholder="Who's your favorite player?" id="playerSearchInput">
-      <input type="submit" value="Search" id="playerSearchSubmit"> 
-    </form>
-    <button id="playerInfoButton">Display Top Player Info</button>
+  <section id="search-player">
+    <h2><span>Player Info</span></h2>
+    <div>
+      <form class="flex-form">
+        <input type="search" placeholder="Who's your favorite player?" id="playerSearchInput">
+        <input type="submit" value="Search" id="playerSearchSubmit"> 
+      </form>
+      <button id="playerInfoButton">Display Top Player Info</button>
+    </div>
   </section>
   
   <section id="favorite-player">
@@ -67,6 +70,12 @@
 
   </section>
 
+  <section id="video-highlights">
+    <div>
+      <h2><span>Video Highlights</span></h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLaIYIgnTIOhSzSXxuWmCc6Fl_Ay3Md4PB" frameborder="0" allow="autoplay; encrypted-media" modestbranding=1 allowfullscreen></iframe>  
+    </div>
+  </section>
   
 
 
