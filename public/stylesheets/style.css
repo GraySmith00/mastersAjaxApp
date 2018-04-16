@@ -343,7 +343,7 @@ input[type="search"] {
 }
 
 #about-augusta {
-  height: 650px;
+  padding: 60px 0 60px 0;
   background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/augustaPic2.jpg");
   background-size: cover;
   -ms-background-position-x: center;
@@ -360,8 +360,7 @@ input[type="search"] {
   font-family: 'Parisienne', cursive;
   font-weight: bold;
   font-size: 4em;
-
-  margin-top: 30px;
+  margin-top: 0;
   margin-bottom: 30px;
 }
 
