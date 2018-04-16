@@ -2,6 +2,7 @@ const table = document.querySelector('#leaderboardTable');
 const playerBio = document.querySelector('#player-bio');
 const playerSearchInput = document.querySelector('#playerSearchInput');
 const playerSearchSubmit = document.querySelector('#playerSearchSubmit');
+const searchPlayerAlert = document.querySelector('#search-player-alert');
 const favoritePlayer = document.querySelector('#favorite-player');
 
 
@@ -125,6 +126,7 @@ getTopPlayers();
 
 const playerInfoButton = document.querySelector('#playerInfoButton');
 playerInfoButton.addEventListener('click', function() {
+  searchPlayerAlert.innerHTML = ``;
   playerBio.classList.toggle("display-none");
   favoritePlayer.classList.add("display-none");
 });
@@ -143,9 +145,11 @@ function getFavoritePlayer() {
         });
         const player = playerData[0];
         if (!player) {
-          favoritePlayer.innerHTML = `<p>Don't recognize that one, try again</p>`;
+          searchPlayerAlert.innerHTML = `<p>Ooooops! Don't recognize that player, try again!<p>`;
+          console.log('that player doesn\'t exist broo');
           return; // if there is no matching player stop the funciton
         }
+        searchPlayerAlert.innerHTML = ``;
         const playerHTML = `
         <div class="player-info">
           <div class="player-photo">

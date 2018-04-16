@@ -144,6 +144,10 @@ a {
   display: table-cell;
 }
 
+
+
+
+
 .player-info {
   color: black;
   display: flex;
@@ -236,7 +240,7 @@ hr {
 }
 
 #search-player {
-  height: 300px;
+  padding: 50px 0 50px 0;
   width: 100%;
   align-items: center;
   background: white;
@@ -246,7 +250,7 @@ hr {
   font-family: 'Parisienne', cursive;
   font-weight: bold;
   font-size: 4em;
-  margin-top: 40px;
+  margin-top: 0;
   margin-bottom: 30px;
   color: black;
   text-align: center;
@@ -264,6 +268,14 @@ hr {
 #search-player div {
   display: flex;
   justify-content: center;
+}
+
+#search-player-alert p {
+  color: black;
+  text-align: center;
+  margin: 30px 0 0 0;
+  color: crimson;
+  padding: 10px;
 }
 
 .flex-form {
