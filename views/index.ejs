@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,65 +9,102 @@
   <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   <title>Masters Leaderboard</title>
 </head>
+
 <body>
 
   <nav class="nav">
-      <a href="/"><img src="/images/mastersLogo.png"></a>
-      <ul> 
-        <li class="link"><a href="#hero">Leaderboard</a></li>
-        <li class="link"><a href="#search-player">Players</a></li>
-        <li class="link"><a href="#about-augusta">Golf Course</a></li>
-        <li class="link"><a href="#video-highlights">Highlights</a></li>
-        <li class="link"><a href="https://en.wikipedia.org/wiki/Masters_Tournament#History" target="_blank">History Wiki</a></li>
-      </ul>
+    <a href="/">
+      <img src="/images/mastersLogo.png">
+    </a>
+    <ul>
+      <li class="link">
+        <a href="#hero">Leaderboard</a>
+      </li>
+      <li class="link">
+        <a href="#search-player">Players</a>
+      </li>
+      <li class="link">
+        <a href="#about-augusta">Golf Course</a>
+      </li>
+      <li class="link">
+        <a href="#video-highlights">Highlights</a>
+      </li>
+      <li class="link">
+        <a href="https://en.wikipedia.org/wiki/Masters_Tournament#History" target="_blank">History Wiki</a>
+      </li>
+    </ul>
   </nav>
 
   <section id="hero">
     <div class="hero-inner">
 
-        <h1><span>Masters</span> 2018 Leaderboard</h1>
-        <div class="leaderboard">
-          <div class="leaderboardTable" id="leaderboardTable">
-            <h3>Loading...</h3>
-          </div>     
+      <h1>
+        <span>Masters</span> 2018 Leaderboard
+      </h1>
+
+      <div class="leaderboard">
+        <div class="leaderboardTable" id="leaderboardTable">
+          <h3>Loading...</h3>
         </div>
+      </div>
 
     </div>
   </section>
 
   <section id="search-player">
-    <h2><span>Player Info</span></h2>
+
+    <h2>
+      <span>Player Info</span>
+    </h2>
+
     <div>
       <form class="flex-form">
         <input type="search" placeholder="Who's your favorite player?" id="playerSearchInput">
-        <input type="submit" value="Search" id="playerSearchSubmit"> 
+        <input type="submit" value="Search" id="playerSearchSubmit">
       </form>
       <button id="playerInfoButton">Display Top Player Info</button>
     </div>
+
     <div id="search-player-alert">
 
     </div>
   </section>
-  
+
   <section id="favorite-player">
 
   </section>
 
   <section class="player-bio display-none" id="player-bio">
-  
+
   </section>
 
   <section id="about-augusta">
     <h2>Augusta National</h2>
     <div>
-      <p>Augusta National Golf Club, located in Augusta, Georgia, is one of the most famous golf clubs in the world. Founded by Bobby Jones and Clifford Roberts on the site of the former Fruitland (later Fruitlands) Nursery, the course was designed by Jones and Alister MacKenzie and opened for play in January 1933. Since 1934, it has played host to the annual Masters Tournament, one of the four major championships in professional golf, and the only major played each year at the same course. It was the top-ranked course in Golf Digest's 2009 list of America's 100 greatest courses and was the number ten ranked course on Golfweek Magazine's 2011 list of best classic courses in the United States, in terms of course architecture.</p>
-    
+      <p>Augusta National Golf Club, located in Augusta, Georgia, is one of the most famous golf clubs in the world. Founded
+        by Bobby Jones and Clifford Roberts on the site of the former Fruitland (later Fruitlands) Nursery, the course was
+        designed by Jones and Alister MacKenzie and opened for play in January 1933. Since 1934, it has played host to the
+        annual Masters Tournament, one of the four major championships in professional golf, and the only major played each
+        year at the same course. It was the top-ranked course in Golf Digest's 2009 list of America's 100 greatest courses
+        and was the number ten ranked course on Golfweek Magazine's 2011 list of best classic courses in the United States,
+        in terms of course architecture.</p>
+
       <h4>Amen Corner</h4>
-      <p>The second shot at the 11th, all of the 12th, and the first two shots at the 13th hole at Augusta are nicknamed "Amen Corner". This term was first used in print by author Herbert Warren Wind in his April 21, 1958, Sports Illustrated article about the Masters that year. In a Golf Digest article in April 1984, 26 years later, Wind told about its origin. He said he wanted a catchy phrase like baseball's "hot-corner" or football's "coffin-corner" to explain where some of the most exciting golf had taken place (the Palmer-Venturi rules issue at twelve, over an embedded ball ruling and how it was handled, in particular). Thus "Amen Corner" was born.</p>
+      <p>The second shot at the 11th, all of the 12th, and the first two shots at the 13th hole at Augusta are nicknamed "Amen
+        Corner". This term was first used in print by author Herbert Warren Wind in his April 21, 1958, Sports Illustrated
+        article about the Masters that year. In a Golf Digest article in April 1984, 26 years later, Wind told about its
+        origin. He said he wanted a catchy phrase like baseball's "hot-corner" or football's "coffin-corner" to explain where
+        some of the most exciting golf had taken place (the Palmer-Venturi rules issue at twelve, over an embedded ball ruling
+        and how it was handled, in particular). Thus "Amen Corner" was born.</p>
 
       <h4>The Green Jacket</h4>
-      <p>Every member of Augusta National receives a green sport coat with the club's logo on the left breast. The idea of the green jacket originated with club co-founder Clifford Roberts. Many believe it is because he wanted patrons visiting during the tournament to be able to readily identify members. Since Sam Snead's victory in 1949, the winner of each year's Masters Tournament has received a green jacket, although he does not receive membership. The jacket is presented to the new winner by the winner of the previous tournament. If the previous champion is either unavailable or has won consecutive tournaments, then the current chairman acts as the presenter.</p>
-   </div>
+      <p>Every member of Augusta National receives a green sport coat with the club's logo on the left breast. The idea of the
+        green jacket originated with club co-founder Clifford Roberts. Many believe it is because he wanted patrons visiting
+        during the tournament to be able to readily identify members. Since Sam Snead's victory in 1949, the winner of each
+        year's Masters Tournament has received a green jacket, although he does not receive membership. The jacket is presented
+        to the new winner by the winner of the previous tournament. If the previous champion is either unavailable or has
+        won consecutive tournaments, then the current chairman acts as the presenter.</p>
+    </div>
   </section>
 
   <section id="video-highlights">
@@ -75,19 +113,23 @@
 
   <section id="video-highlights">
     <div>
-      <h2><span>Video Highlights</span></h2>
-      <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLaIYIgnTIOhSzSXxuWmCc6Fl_Ay3Md4PB" frameborder="0" allow="autoplay; encrypted-media" modestbranding=1 allowfullscreen></iframe>  
+      <h2>
+        <span>Video Highlights</span>
+      </h2>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLaIYIgnTIOhSzSXxuWmCc6Fl_Ay3Md4PB"
+        frameborder="0" allow="autoplay; encrypted-media" modestbranding=1 allowfullscreen></iframe>
     </div>
   </section>
-  
 
 
 
 
 
 
-  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
+
+  <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl"
+    crossorigin="anonymous"></script>
   <script type="text/javascript" src="javascripts/main.js"></script>
 </body>
-</html>
 
+</html>
