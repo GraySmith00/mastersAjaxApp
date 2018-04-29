@@ -1,5 +1,5 @@
 @import url("http://fonts.googleapis.com/css?family=Lato:400,700,400italic");
-@import url('https://fonts.googleapis.com/css?family=Old+Standard+TT|Parisienne');
+@import url("https://fonts.googleapis.com/css?family=Old+Standard+TT|Parisienne");
 
 html {
   scroll-behavior: smooth;
@@ -8,15 +8,15 @@ html {
 body {
   margin: 0;
   color: white;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
-  
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans,
+    Ubuntu, Cantarell, Helvetica Neue, sans-serif;
 }
 
 @font-face {
-  font-family: 'caslonSwash';
+  font-family: "caslonSwash";
   font-style: normal;
   font-weight: normal;
-  src: local('caslonSwash'), url('./fonts/caslonSwash.otf') format('truetype');
+  src: local("caslonSwash"), url("./fonts/caslonSwash.otf") format("truetype");
 }
 
 a {
@@ -69,7 +69,8 @@ a {
   align-items: center;
   justify-content: flex-end;
   text-align: center;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../images/augustaHole13Edit.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+    url("../images/augustaHole13Edit.jpg");
   background-size: cover;
   background-position: center bottom;
   background-repeat: no-repeat;
@@ -81,11 +82,11 @@ a {
   font-size: 3em;
   font-weight: 300;
   margin: 20px 0 20px 0;
-  font-family: 'Old Standard TT', serif;
+  font-family: "Old Standard TT", serif;
 }
 
 #hero h1 span {
-  font-family: 'Parisienne', cursive;
+  font-family: "Parisienne", cursive;
   font-weight: bold;
   font-size: 1.4em;
 }
@@ -133,9 +134,33 @@ a {
 
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#52b152+-1,b4ddb4+0,52b152+0,83c783+0,008a00+0,002400+100 */
   background: #52b152; /* Old browsers */
-  background: -moz-linear-gradient(top, #52b152 -1%, #b4ddb4 0%, #52b152 0%, #83c783 0%, #008a00 0%, #002400 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #52b152 -1%,#b4ddb4 0%,#52b152 0%,#83c783 0%,#008a00 0%,#002400 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #52b152 -1%,#b4ddb4 0%,#52b152 0%,#83c783 0%,#008a00 0%,#002400 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(
+    top,
+    #52b152 -1%,
+    #b4ddb4 0%,
+    #52b152 0%,
+    #83c783 0%,
+    #008a00 0%,
+    #002400 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #52b152 -1%,
+    #b4ddb4 0%,
+    #52b152 0%,
+    #83c783 0%,
+    #008a00 0%,
+    #002400 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #52b152 -1%,
+    #b4ddb4 0%,
+    #52b152 0%,
+    #83c783 0%,
+    #008a00 0%,
+    #002400 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52b152', endColorstr='#002400',GradientType=0 ); /* IE6-9 */
 }
 
@@ -143,10 +168,6 @@ a {
   padding: 6px 12px;
   display: table-cell;
 }
-
-
-
-
 
 .player-info {
   color: black;
@@ -170,9 +191,9 @@ hr {
   width: 300px;
   border-radius: 10px;
 
-  -webkit-box-shadow: 10px 10px 39px -6px rgba(0,0,0,0.36);
-  -moz-box-shadow: 10px 10px 39px -6px rgba(0,0,0,0.36);
-  box-shadow: 10px 10px 39px -6px rgba(0,0,0,0.36);
+  -webkit-box-shadow: 10px 10px 39px -6px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: 10px 10px 39px -6px rgba(0, 0, 0, 0.36);
+  box-shadow: 10px 10px 39px -6px rgba(0, 0, 0, 0.36);
 }
 
 .player-info-text {
@@ -183,9 +204,9 @@ hr {
   background-color: #eeeeee;
   padding: 5px 30px 0 30px;
   border-radius: 10px;
-  -webkit-box-shadow: 10px 10px 39px -6px rgba(0,0,0,0.36);
-  -moz-box-shadow: 10px 10px 39px -6px rgba(0,0,0,0.36);
-  box-shadow: 10px 10px 39px -6px rgba(0,0,0,0.36);
+  -webkit-box-shadow: 10px 10px 39px -6px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: 10px 10px 39px -6px rgba(0, 0, 0, 0.36);
+  box-shadow: 10px 10px 39px -6px rgba(0, 0, 0, 0.36);
   width: 100%;
 }
 
@@ -196,7 +217,7 @@ hr {
 .player-info-text h2 span {
   color: gold;
   font-weight: 150;
-  text-shadow: -.2px 0 black, 0 .2px black, .2px 0 black, 0 -.2px;
+  text-shadow: -0.2px 0 black, 0 0.2px black, 0.2px 0 black, 0 -0.2px;
 }
 
 .player-info-text p {
@@ -247,7 +268,7 @@ hr {
 }
 
 #search-player h2 {
-  font-family: 'Parisienne', cursive;
+  font-family: "Parisienne", cursive;
   font-weight: bold;
   font-size: 4em;
   margin-top: 0;
@@ -258,11 +279,19 @@ hr {
 
 #search-player h2 span {
   color: transparent;
-  background: #52c234;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #061700, #52c234);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #061700, #52c234); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #52c234; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #061700,
+    #52c234
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #061700,
+    #52c234
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
-    background-clip: text;
+  background-clip: text;
 }
 
 #search-player div {
@@ -281,15 +310,15 @@ hr {
 .flex-form {
   flex-basis: 600px;
   display: flex;
-  border: 20px solid rgba(0,0,0,0.3);
+  border: 20px solid rgba(0, 0, 0, 0.3);
   border-radius: 5px;
 
   display: flex;
   justify-content: flex-end;
 
-  -webkit-box-shadow: 8px 8px 39px -6px rgba(0,0,0,0.36);
-  -moz-box-shadow: 8px 8px 39px -6px rgba(0,0,0,0.36);
-  box-shadow: 8px 8px 39px -6px rgba(0,0,0,0.36);
+  -webkit-box-shadow: 8px 8px 39px -6px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: 8px 8px 39px -6px rgba(0, 0, 0, 0.36);
+  box-shadow: 8px 8px 39px -6px rgba(0, 0, 0, 0.36);
 }
 
 .flex-form > * {
@@ -303,18 +332,24 @@ hr {
   font-size: 20px;
   border-radius: 0;
   outline: 0;
-  border-right:1px solid rgba(0,0,0,0.2);
-  -webkit-appearance:none;
+  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  -webkit-appearance: none;
 }
 
 input[type="search"] {
   flex-basis: 600px;
+  border: none;
+  line-height: 50px;
+  font-size: 20px;
+  border-radius: 0;
+  outline: 0;
+  padding-left: 15px;
 }
 
 .flex-form input[type="submit"] {
-  background: #FF5A5F;
-  border-top: 1px solid #FF5A5F;
-  border-bottom: 1px solid #FF5A5F;
+  background: #ff5a5f;
+  border-top: 1px solid #ff5a5f;
+  border-bottom: 1px solid #ff5a5f;
   color: white;
 }
 
@@ -322,7 +357,56 @@ input[type="search"] {
   border-right: 0;
 }
 
-#playerInfoButton {
+.highlight {
+  background-color: yellow;
+}
+
+.autocomplete {
+  /*the container must be positioned relative:*/
+  position: relative;
+  display: inline-block;
+  padding: 0px;
+  margin: 0px;
+  flex: 1;
+  align-items: center;
+}
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 100%;
+  left: 0;
+  right: 0;
+  color: black;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: #fff;
+  border-bottom: 1px solid #d4d4d4;
+  border-top: 1px solid #d4d4d4;
+  width: 100%;
+  box-sizing: border-box;
+}
+.autocomplete-items div:hover {
+  /*when hovering an item:*/
+  background-color: #e9e9e9;
+}
+.autocomplete-active {
+  /*when navigating through the items using the arrow keys:*/
+  background-color: DodgerBlue !important;
+  color: #ffffff;
+}
+
+#topPlayerButton {
   font-size: 20px;
   padding: 44px;
   border-radius: 10px;
@@ -330,21 +414,45 @@ input[type="search"] {
   outline: none;
   color: white;
 
-  -webkit-box-shadow: 10px 10px 39px -6px rgba(0,0,0,0.36);
-  -moz-box-shadow: 10px 10px 39px -6px rgba(0,0,0,0.36);
-  box-shadow: 10px 10px 39px -6px rgba(0,0,0,0.36);
+  -webkit-box-shadow: 10px 10px 39px -6px rgba(0, 0, 0, 0.36);
+  -moz-box-shadow: 10px 10px 39px -6px rgba(0, 0, 0, 0.36);
+  box-shadow: 10px 10px 39px -6px rgba(0, 0, 0, 0.36);
 
   background: #52b152; /* Old browsers */
-  background: -moz-linear-gradient(top, #52b152 -1%, #b4ddb4 0%, #52b152 0%, #83c783 0%, #008a00 0%, #002400 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #52b152 -1%,#b4ddb4 0%,#52b152 0%,#83c783 0%,#008a00 0%,#002400 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #52b152 -1%,#b4ddb4 0%,#52b152 0%,#83c783 0%,#008a00 0%,#002400 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  background: -moz-linear-gradient(
+    top,
+    #52b152 -1%,
+    #b4ddb4 0%,
+    #52b152 0%,
+    #83c783 0%,
+    #008a00 0%,
+    #002400 100%
+  ); /* FF3.6-15 */
+  background: -webkit-linear-gradient(
+    top,
+    #52b152 -1%,
+    #b4ddb4 0%,
+    #52b152 0%,
+    #83c783 0%,
+    #008a00 0%,
+    #002400 100%
+  ); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(
+    to bottom,
+    #52b152 -1%,
+    #b4ddb4 0%,
+    #52b152 0%,
+    #83c783 0%,
+    #008a00 0%,
+    #002400 100%
+  ); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#52b152', endColorstr='#002400',GradientType=0 ); /* IE6-9 */
-
 }
 
 #about-augusta {
   padding: 60px 0 60px 0;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../images/augustaPic2.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("../images/augustaPic2.jpg");
   background-size: cover;
   -ms-background-position-x: center;
   -ms-background-position-y: bottom;
@@ -357,7 +465,7 @@ input[type="search"] {
 }
 
 #about-augusta h2 {
-  font-family: 'Parisienne', cursive;
+  font-family: "Parisienne", cursive;
   font-weight: bold;
   font-size: 4em;
   margin-top: 0;
@@ -377,7 +485,7 @@ input[type="search"] {
 }
 
 #about-augusta h4 {
-  font-family: 'Parisienne', cursive;
+  font-family: "Parisienne", cursive;
   font-weight: bold;
   font-size: 1.2rem;
   letter-spacing: 1.2px;
@@ -395,7 +503,7 @@ input[type="search"] {
 }
 
 #video-highlights h2 {
-  font-family: 'Parisienne', cursive;
+  font-family: "Parisienne", cursive;
   font-weight: bold;
   font-size: 4em;
   margin-top: 40px;
@@ -406,16 +514,24 @@ input[type="search"] {
 
 #video-highlights h2 span {
   color: transparent;
-  background: #52c234;  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #061700, #52c234);  /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #061700, #52c234); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: #52c234; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to right,
+    #061700,
+    #52c234
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to right,
+    #061700,
+    #52c234
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
-    background-clip: text;
+  background-clip: text;
 }
 
 #video-highlights iframe {
-  -webkit-box-shadow: 10px 10px 39px -6px rgba(0,0,0,0.5);
-  -moz-box-shadow: 10px 10px 39px -6px rgba(0,0,0,0.5);
-  box-shadow: 10px 10px 39px -6px rgba(0,0,0,0.5);
+  -webkit-box-shadow: 10px 10px 39px -6px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 10px 10px 39px -6px rgba(0, 0, 0, 0.5);
+  box-shadow: 10px 10px 39px -6px rgba(0, 0, 0, 0.5);
   border: 2px solid #fbe233;
 }
