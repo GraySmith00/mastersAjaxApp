@@ -90,7 +90,9 @@ function playerHTML(player) {
   return `
   <div class="player-info">
     <div class="player-photo">
-      <img src="images/players/${player.player_bio.first_name.toLowerCase()}_${player.player_bio.last_name.toLowerCase()}.png" />
+      <img src="images/players/${player.player_bio.first_name}_${
+    player.player_bio.last_name
+  }.png" />
     </div>
     <div class="player-info-text">
       <h2>
